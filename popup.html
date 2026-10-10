@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head><meta charset="utf-8"><style>
+body{width:260px;font-family:system-ui,sans-serif;font-size:13px;margin:0;padding:12px;color:#222}
+h3{margin:0 0 8px;color:#e91e63;font-size:15px}
+label{display:flex;gap:8px;align-items:center;margin:7px 0;cursor:pointer}
+.row{display:flex;gap:6px;align-items:center;margin:7px 0}
+.row input{width:60px;padding:4px 6px;border:1px solid #ccc;border-radius:6px}
+button{width:100%;background:#e91e63;color:#fff;border:0;border-radius:8px;padding:8px;font-weight:700;cursor:pointer;margin-top:8px}
+.note{background:#fdf2f8;border:1px dashed #e91e63;border-radius:8px;padding:7px;margin-top:8px}
+a{color:#e91e63}
+</style></head>
+<body>
+<h3>⚡ YHW Auto Solver</h3>
+<label><input type="checkbox" id="auto"> Tự động làm bài</label>
+<label><input type="checkbox" id="turbo"> 🚀 Siêu tốc (delay ~0.1s)</label>
+<label><input type="checkbox" id="highlight"> Highlight đáp án đúng</label>
+<label><input type="checkbox" id="autoNext"> Tự chuyển câu tiếp theo</label>
+<div class="row">Delay <input id="dmin" type="number" min="0" max="5000"> – <input id="dmax" type="number" min="0" max="5000"> ms</div>
+<button id="save">Lưu</button>
+<div class="note">Hỗ trợ <b>yourhomework.net/vocab/…/q1-q7, f1-f7, m1-m2</b> (trắc nghiệm + điền từ + ghép cặp, kể cả câu nghe). Mở trang bài tập, panel góc phải sẽ tự giải.<br><br>Cài: <b>chrome://extensions</b> → bật <b>Developer mode</b> → <b>Load unpacked</b> → chọn thư mục extension.</div>
+<script src="popup.js"></script>
+</body>
+</html>

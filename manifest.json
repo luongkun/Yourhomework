@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "YHW Auto Solver - yourhomework.net",
+  "version": "1.2.0",
+  "description": "Tự động làm bài trắc nghiệm + điền từ + ghép cặp trên yourhomework.net (Q1-Q7, F1-F7, M1-M2). Highlight đáp án, tự click, tự qua câu.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://yourhomework.net/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "YHW Auto Solver"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://yourhomework.net/vocab/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
+}
